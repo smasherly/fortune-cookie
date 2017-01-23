@@ -45,6 +45,7 @@ class MainHandler(webapp2.RequestHandler):
         cookie_again_button = "<a href=''.''><button>Another cookie please!</button></a>"
 
         content = header + fortune_paragraph + number_paragraph + cookie_again_button
+        
         self.response.write(content)
 
 app = webapp2.WSGIApplication([
